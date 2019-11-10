@@ -94,8 +94,8 @@ a {
 .header__logo {
     font-size: 20px;
     line-height: 24px;
-    padding-top: 46px;
-    padding-left: 20px;
+    padding-top: 50px;
+    
 }
 .header__logo-phone {
     display: none;
@@ -106,19 +106,21 @@ a {
     line-height: 24px;
 }
 .header__acc {
-    padding-top: 60px;
-    
+    padding-top: 50px;
+    line-height: 40px;
 }
 
 .header__acc-signin {
     border: 2px solid #FFFFFF;
     border-radius: 50px;
+    
     padding: 10px 17px 9px 18px;
 }
 
 .header__acc-login {
     border: 2px solid rgba(0, 0, 0, 0);
     padding: 10px 17px ;
+    
     border-radius: 50px; 
 }
 .header__acc-login:hover {
@@ -524,9 +526,6 @@ a {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .header__logo {
-        padding-left: 48px;
-    }
     .steps__item {
         margin: 10px;
     }
