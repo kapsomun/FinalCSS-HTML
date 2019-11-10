@@ -1,6 +1,4 @@
-html {
-    overflow-x: hidden;
-}
+
 
 * {
     box-sizing: border-box;
@@ -57,7 +55,7 @@ a {
 }
 
 .container {
-    max-width: 980px;
+    max-width: 1240px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -99,10 +97,17 @@ a {
     padding-top: 46px;
     padding-left: 20px;
 }
-
+.header__logo-phone {
+    display: none;
+    padding: 100px 0 ;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+}
 .header__acc {
     padding-top: 60px;
-    padding-right: 50px;
+    
 }
 
 .header__acc-signin {
@@ -165,6 +170,7 @@ a {
 }
 
 .baner__link {
+    display: inline-block;
     margin: 0 auto;
     padding: 12px 18.5px;
 }
@@ -172,10 +178,12 @@ a {
 
 /* Steps */
 
+
 .steps__wrap {
     display: flex;
     flex-wrap: nowrap;
     margin: 0 auto;
+    min-height: 400px;
     
 }
 
@@ -183,8 +191,9 @@ a {
     min-height: 400px;
     width: calc(100% / 3 - 20px);
     margin: 10px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+
 }
 .steps__img {
     
@@ -209,13 +218,12 @@ a {
 }
 
 .steps__text {
-    position: absolute;
-    bottom: 0;
     display: flex;
     align-items: flex-start;
-    flex-direction: column;
     justify-content: flex-end;
-    padding: 20px 25px;
+    flex-direction: column;
+    
+    padding: 30px 25px;
     z-index: 3;
     
 }
@@ -298,6 +306,7 @@ a {
 }
 
 .partners__others-link {
+    display: inline-block;
     margin: 0 auto;
     margin-top: 36px;
     color: #FF4E50;
@@ -324,18 +333,16 @@ a {
 .services__item {
     margin: 10px;
     min-height: 300px;
-    position: relative;
-    text-align: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.services_list-text {
+.services__item-text {
     font-size: 22px;
     line-height: 27px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+    
 }
 
 .services__item.w1-3 {
@@ -425,7 +432,7 @@ a {
     letter-spacing: 1px;
     color: #CCCCCC;
     padding: 10px;
-    position: relative;
+   
 }
 
 .footer__dsg-img {
@@ -449,6 +456,11 @@ a {
     }
     .header__logo {
         display: none;
+    }
+    .header__logo-phone {
+        display: block;
+    
+        
     }
     .header__acc {
         text-align: center;
@@ -476,7 +488,7 @@ a {
         width: 100%;
         background-size: cover;
         margin: 10px 10px;
-        max-height: 120px;
+        min-height: 120px;
     }
     .footer__list {
         display: flex;
@@ -506,6 +518,9 @@ a {
     .interest__btn {
         margin-top: 20px;
     }
+    .h3 {
+        padding: 25px 0;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -515,13 +530,8 @@ a {
     .steps__item {
         margin: 10px;
     }
-    .steps__text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%)
-    }
+    
+
     .partners__list {
         display: flex;
         flex-wrap: wrap;
