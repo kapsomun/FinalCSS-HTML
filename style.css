@@ -446,6 +446,7 @@ a {
 /* Media */
 
 @media screen and (max-width: 767px) {
+
     .h2 {
         padding: 35px 10px 0 10px;
     }
@@ -480,7 +481,7 @@ a {
     }
     .steps__item {
         width: 100%;
-        margin: 10px 10px;
+        margin: 10px auto;
     }
     .services__list {
         display: block;
@@ -489,7 +490,7 @@ a {
     .services__item.w2-3 {
         width: 100%;
         background-size: cover;
-        margin: 10px 10px;
+        margin: 10px auto;
         min-height: 120px;
     }
     .footer__list {
